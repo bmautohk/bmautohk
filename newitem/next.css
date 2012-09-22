@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#all {
+	height: 1430px;
+	width: 950px;
+}
+#banner {
+	height: 30px;
+	width: 900px;
+	background-color: #009900;
+	margin-bottom: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+#bannera {
+	height: 60px;
+	width: 900px;
+	margin-bottom: 10px;
+}
+#p1 {
+	float: none;
+	height: 900px;
+	width: 950px;
+}
+#mune {
+	height: 900px;
+	width: 900px;
+}
+#next {
+	height: 30px;
+	width: 400px;
+	float: none;
+	margin-top: 10px;
+	padding-left: 500px;
+}
+.STYLE1 {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<center> <body>
+<div id="all">
+  
+    <div class="STYLE1" id="banner"><a href="index.html">新商品お勧め</a></div>
+  <div id="bannera">弊社は工場直販のため、中間マージン等一切挟まないため、どこよりも安く、品質の良い商品をご提供できる自信<br />
+        がございます。<br />
+      ISO9001:2000認定取得工場    人気車最新ドレスアップはコレだ!!</div>
+      <div id="mune">
+        <div id="p1"><img src="image/NO1.jpg" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="34,203,252,343" href="image/E52 ZHONGZHU.jpg" target="_blank" />
+<area shape="rect" coords="263,202,477,343" href="image/EX240EX241.jpg" target="_blank" />
+<area shape="rect" coords="480,203,581,263" href="image/E52 EX240.jpg" target="_blank" />
+<area shape="rect" coords="479,283,582,342" href="image/E52 EX241.jpg" target="_blank" />
+<area shape="rect" coords="38,399,353,504" href="image/E52 EX248.jpg" target="_blank" />
+<area shape="rect" coords="367,400,579,504" href="image/E52 EX244.jpg" target="_blank" />
+<area shape="rect" coords="36,565,398,687" href="image/E52 EX247.jpg" target="_blank" />
+<area shape="rect" coords="411,565,579,651" href="image/E52 ex245.jpg" target="_blank" />
+<area shape="rect" coords="411,693,579,779" href="image/E52 EX242.jpg" target="_blank" />
+<area shape="rect" coords="268,729,394,813" href="image/MAZDA CX-5.jpg" target="_blank" />
+</map><br>
+        <br>更新日期：2012.8.8</div>
+    </div>
+      <div id="next">
+      <div class="paging"><a class="prn" title="go to page 2" href="new item.html" rel="nofollow"> &lt; Previous</a> <span class="prn">...</span> <a title="go to page 1" href="new item.html">1</a> <a title="go to page 2" href="new item 2.html">2</a> <span><a href="new item 3.html">3</a></span> <a title="go to page 4" href="new item 4.html">4</a> <a title="go to page 5" href="/index.php?page=5">5</a> <a title="go to page 6" href="/index.php?page=6">6</a> <span class="prn">...</span> <a class="prn" title="go to page 4" href="new item 2.html" rel="nofollow">Next &gt;</a> </div> 
+     </div>
+</div>
+</body></center>
+</html>

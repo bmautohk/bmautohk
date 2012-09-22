@@ -1,0 +1,417 @@
+.carlist{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	font-weight: bold;
+    margin: 0 0 0 20px;
+    color: darkblue;
+}
+
+.hotmodel{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin: 0 0 0 20px;
+    color: darkblue;
+}
+
+.category{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin: 0 0 0 20px;
+    color: darkblue;
+}
+
+.chiaboutus{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #076770
+}
+
+.engaboutus{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #076770
+}
+
+.contact{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: grey
+}
+
+.topline{
+	background-image:url('../images/topline.jpg');
+	background-repeat:repeat-x, repeat-y
+}
+
+.newitem{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	margin: 0 20px 0 20px;
+	text-wrap: suppress;
+}
+
+.bottomline{
+	background-image:url('../images/bottomline.jpg');
+	background-repeat:repeat-x, repeat-y
+}
+
+.bottomdotline{
+	background-image:url('../images/bottomdotline.jpg');
+	background-repeat:repeat-x
+}
+
+.copyright{
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black
+}
+
+.horizontalborder {
+	background-image:url('../images/contentborder.jpg');
+	background-repeat:repeat-x;
+}
+
+.verticalborder {
+	background-image:url('../images/contentborder.jpg');
+	background-repeat:repeat-y;
+}
+
+.productdetaildesc {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	letter-spacing:2px;
+	text-align: justify;
+    color: blue;
+}
+
+.productdetailitem {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+	font-weight: bold;
+    color: grey;
+}
+
+.stepcarousel{
+	position: relative; /*leave this value alone*/
+	border: 1px solid #339846;
+	overflow: scroll; /*leave this value alone*/
+	width: 746px; /*Width of Carousel Viewer itself*/
+	height: 35px; /*Height should enough to fit largest content's height*/
+}
+
+.stepcarousel .belt{
+	position: absolute; /*leave this value alone*/
+	left: 0;
+	top: 0;
+}
+
+.stepcarousel .panel{
+	float: left; /*leave this value alone*/
+	overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+	margin: 0px; /*margin around each panel*/
+	width: 186px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+.point {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	color: grey;
+}
+
+.producttitle {
+	background-image:url('../images/producttitle.jpg');
+	background-repeat:repeat-x
+}
+
+.product {
+	background-image:url('../images/rectangle.jpg');
+	cellspacing: 0;
+	cellpadding: 0;
+	border: 0px none;
+	width: 628px;
+	height: 26px;
+	valign: top
+}
+a:link, a:visited {
+color : #00F;
+text-decoration : none;
+}
+a img {
+border : 0px none;
+}
+div.wrap {
+width : 748px;
+margin : 0 auto;
+text-align : left;
+}
+div#top div#nav {
+float : left;
+clear : both;
+width : 748px;
+height : 52px;
+margin : 22px 0 0;
+}
+div#top div#nav ul {
+float : left;
+width : 700px;
+height : 52px;
+list-style-type : none;
+}
+div#nav ul li {
+float : left;
+height : 52px;
+}
+div#nav ul li a {
+border : 0px none;
+height : 52px;
+display : block;
+line-height : 52px;
+text-indent : -9999px
+}
+div#header {
+margin : -1px 0 0;
+}
+div#video-header {
+height : 748px;
+margin : -1px 0 0;
+}
+div#header div.wrap {
+top : 0px;
+left : 0px;
+width : 748px;
+height : 290px;
+
+}
+div#header div#slide-holder {
+z-index : 0;
+width : 748px;
+height : 290px;
+position : absolute;
+}
+div#header div#slide-holder div#slide-runner {
+top : 0px;
+left : 0px;
+width : 748px;
+height : 290px;
+overflow : hidden;
+position : absolute;
+}
+div#header div#slide-holder img {
+margin : 0;
+display : none;
+position : absolute;
+}
+div#header div#slide-holder div#slide-controls {
+left : 0;
+bottom : 0px;
+width : 748px;
+height : 290px;
+display : none;
+position : absolute;
+}
+/*
+div#header div#slide-holder div#slide-controls p.text {
+float : left;
+color : #fff;
+display : inline;
+font-size : 10px;
+line-height : 16px;
+margin : 15px 0 0 20px;
+text-transform : uppercase;
+}
+*/
+div#header div#slide-holder div#slide-controls p#slide-nav {
+float : right;
+height : 18px;
+display : inline;
+margin : 11px 15px 0 0;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+float : left;
+width : 20px;
+height : 18px;
+color : white; 
+display : inline;
+font-size : 11px;
+margin : 240px 5px 0 0;
+line-height : 18px;
+font-weight : bold;
+text-align : center;
+text-decoration : none;
+background-position : 0 0;
+background-repeat : no-repeat;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a.on {
+background-position : 0 -18px;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+background-image : url('../images/slide-nav.jpg');
+}
+div#nav ul li a {
+background : url('../images/nav.png') no-repeat;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+*{padding: 0; margin: 0;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox specific link and font settings <<<------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_window {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+#TB_secondLine {
+	font: 10px Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+#TB_window a:link {color: #666666;}
+#TB_window a:visited {color: #666666;}
+#TB_window a:hover {color: #000;}
+#TB_window a:active {color: #666666;}
+#TB_window a:focus{color: #666666;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox settings <<<-----------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_overlay {
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+}
+
+.TB_overlayMacFFBGHack {background: url(macFFBgHack.png) repeat;}
+.TB_overlayBG {
+	background-color:#000;
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+
+* html #TB_overlay { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_window {
+	position: fixed;
+	background: #ffffff;
+	z-index: 102;
+	color:#000000;
+	display:none;
+	border: 4px solid #525252;
+	text-align:left;
+	top:50%;
+	left:50%;
+}
+
+* html #TB_window { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_window img#TB_Image {
+	display:block;
+	margin: 15px 0 0 15px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+}
+
+#TB_caption{
+	height:25px;
+	padding:7px 30px 10px 25px;
+	float:left;
+}
+
+#TB_closeWindow{
+	height:25px;
+	padding:11px 25px 10px 0;
+	float:right;
+}
+
+#TB_closeAjaxWindow{
+	padding:7px 10px 5px 0;
+	margin-bottom:1px;
+	text-align:right;
+	float:right;
+}
+
+#TB_ajaxWindowTitle{
+	float:left;
+	padding:7px 0 5px 10px;
+	margin-bottom:1px;
+}
+
+#TB_title{
+	background-color:#e8e8e8;
+	height:27px;
+}
+
+#TB_ajaxContent{
+	clear:both;
+	padding:2px 15px 15px 15px;
+	overflow:auto;
+	text-align:left;
+	line-height:1.4em;
+}
+
+#TB_ajaxContent.TB_modal{
+	padding:15px;
+}
+
+#TB_ajaxContent p{
+	padding:5px 0px 5px 0px;
+}
+
+#TB_load{
+	position: fixed;
+	display:none;
+	height:13px;
+	width:208px;
+	z-index:103;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */
+}
+
+* html #TB_load { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_HideSelect{
+	z-index:99;
+	position:fixed;
+	top: 0;
+	left: 0;
+	background-color:#fff;
+	border:none;
+	filter:alpha(opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+	height:100%;
+	width:100%;
+}
+
+* html #TB_HideSelect { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_iframeContent{
+	clear:both;
+	border:none;
+	margin-bottom:-1px;
+	margin-top:1px;
+	_margin-bottom:1px;
+}

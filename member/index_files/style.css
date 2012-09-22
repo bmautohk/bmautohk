@@ -1,0 +1,250 @@
+.header{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+	color: grey;
+	vertical-align:middle;
+	text-align:right;
+}
+
+.carlist{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	font-weight: bold;
+    margin: 0 0 0 20px;
+    color: darkblue;
+}
+
+.hotmodel{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin: 0 0 0 20px;
+    color: darkblue;
+}
+
+.category{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin: 0 0 0 20px;
+    color: darkblue;
+}
+
+.chiaboutus{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #076770
+}
+
+.engaboutus{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #076770
+}
+
+.contact{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: grey
+}
+
+.topline{
+	background-image:url('../images/topline.jpg');
+	background-repeat:repeat-x, repeat-y
+}
+
+.newitem{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	margin: 0 20px 0 20px;
+	text-wrap: suppress;
+}
+
+.bottomline{
+	background-image:url('../images/bottomline.jpg');
+	background-repeat:repeat-x, repeat-y
+}
+
+.bottomdotline{
+	background-image:url('../images/bottomdotline.jpg');
+	background-repeat:repeat-x
+}
+
+.copyright{
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black
+}
+
+.horizontalborder {
+	background-image:url('../images/contentborder.jpg');
+	background-repeat:repeat-x;
+}
+
+.verticalborder {
+	background-image:url('../images/contentborder.jpg');
+	background-repeat:repeat-y;
+}
+
+.productdetaildesc {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	letter-spacing:2px;
+	text-align: justify;
+    color: blue;
+}
+
+.productdetailitem {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+	font-weight: bold;
+    color: grey;
+}
+
+.stepcarousel{
+	position: relative; /*leave this value alone*/
+	border: 1px solid #339846;
+	overflow: scroll; /*leave this value alone*/
+	width: 746px; /*Width of Carousel Viewer itself*/
+	height: 35px; /*Height should enough to fit largest content's height*/
+}
+
+.stepcarousel .belt{
+	position: absolute; /*leave this value alone*/
+	left: 0;
+	top: 0;
+}
+
+.stepcarousel .panel{
+	float: left; /*leave this value alone*/
+	overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+	margin: 0px; /*margin around each panel*/
+	width: 186px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
+
+.point {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	color: grey;
+}
+
+.producttitle {
+	background-image:url('../images/producttitle.jpg');
+	background-repeat:repeat-x
+}
+
+.product {
+	background-image:url('../images/rectangle.jpg');
+	cellspacing: 0;
+	cellpadding: 0;
+	border: 0px none;
+	width: 628px;
+	height: 26px;
+	valign: top
+}
+a:link, a:visited {
+color : #00F;
+text-decoration : none;
+}
+a img {
+border : 0px none;
+}
+div.wrap {
+width : 748px;
+margin : 0 auto;
+text-align : left;
+}
+div#top div#nav {
+float : left;
+clear : both;
+width : 748px;
+height : 52px;
+margin : 22px 0 0;
+}
+div#top div#nav ul {
+float : left;
+width : 700px;
+height : 52px;
+list-style-type : none;
+}
+div#nav ul li {
+float : left;
+height : 52px;
+}
+div#nav ul li a {
+border : 0px none;
+height : 52px;
+display : block;
+line-height : 52px;
+text-indent : -9999px
+}
+div#header {
+margin : -1px 0 0;
+}
+div#video-header {
+height : 748px;
+margin : -1px 0 0;
+}
+div#header div.wrap {
+top : 0px;
+left : 0px;
+width : 748px;
+height : 290px;
+
+}
+div#header div#slide-holder {
+z-index : 0;
+width : 748px;
+height : 290px;
+position : absolute;
+}
+div#header div#slide-holder div#slide-runner {
+top : 0px;
+left : 0px;
+width : 748px;
+height : 290px;
+overflow : hidden;
+position : absolute;
+}
+div#header div#slide-holder img {
+margin : 0;
+display : none;
+position : absolute;
+}
+div#header div#slide-holder div#slide-controls {
+left : 0;
+bottom : 0px;
+width : 748px;
+height : 290px;
+display : none;
+position : absolute;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav {
+float : right;
+height : 18px;
+display : inline;
+margin : 11px 15px 0 0;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+float : left;
+width : 20px;
+height : 18px;
+color : white; 
+display : inline;
+font-size : 11px;
+margin : 240px 5px 0 0;
+line-height : 18px;
+font-weight : bold;
+text-align : center;
+text-decoration : none;
+background-position : 0 0;
+background-repeat : no-repeat;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a.on {
+background-position : 0 -18px;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+background-image : url('slide-nav.jpg');
+}
+div#nav ul li a {
+background : url('nav.png') no-repeat;
+}

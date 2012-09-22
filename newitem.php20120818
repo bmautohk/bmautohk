@@ -1,0 +1,29 @@
+<?php
+include("dbconnection.php");
+$result = mysql_query("SELECT * FROM product WHERE new = 'T' LIMIT 4");
+?>
+		 <tr>
+           <td colspan="3" align="center" height="8"></td>
+         </tr>
+         
+         <tr>
+           <td colspan="3" align="center">
+             <table cellpadding="0" cellspacing="0" border="0" width="100%">
+               <tr>
+         <?php
+		 
+		  while($row = mysql_fetch_array($result)) {
+			//$desc = $row['product_made']." ".$row['product_car_name']." ".$row['product_model']." ".$row['product_name'];
+			
+		  	echo "<td width='25%'><a class='hotmodel' href='productdetails.php?productdetail=".$row['product_cd']."'><img src='images/product/".$row['product_cd']."_s.jpg'/>".$desc."<br>".$row['product_made']."<br>".$row['product_car_name']."<br>".$row['product_model']."</a></td>";
+		  }
+		  
+		  ?>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="3" height="8"></td>
+        </tr>

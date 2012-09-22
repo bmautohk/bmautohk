@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table width="170" border="0" cellspacing="0" cellpadding="0" background="images/greyborder.jpg">
+              <tr>
+                <td><img src="images/carlist.jpg" width="168" height="66" /></td>
+              </tr>
+              <?php
+			  // select the brand name from database
+			  
+			  $i = 1;
+			  $result = mysql_query("SELECT make_name FROM make");
+
+			  while($row = mysql_fetch_array($result)) {
+				if ($i % 2 != 0) {
+				  echo "<tr>
+				          <td background='images/row1.jpg' width='170' height='25' align='left'><a href='model.php?brand=". $row['make_name']."' class='carlist'>".$row['make_name']."</a></td>
+						</tr>";
+				}
+				else {
+				  echo "<tr>
+				          <td background='images/row2.jpg' width='170' height='25' align='left'><a href='model.php?brand=".$row['make_name']."' class='carlist'>".$row['make_name']."</a></td>
+						</tr>";
+                }
+				$i = $i + 1;
+			  }
+			  ?>
+        <tr>
+          <td height="8"></td>
+        </tr>
+      </table>
+      
+      <table width="170" border="0" cellspacing="0" cellpadding="0" background="images/greyborder.jpg">
+              <tr>
+                <td><img src="images/hotmodels.jpg" width="168" height="66" /></td>
+              </tr>
+              <?php
+			  // select the brand name from database
+			  
+			  $i = 1;
+			  $result = mysql_query("SELECT model_name FROM model");
+
+			  while($row = mysql_fetch_array($result)) {
+				if ($i % 2 != 0) {
+				  echo "<tr>
+				          <td background='images/row1.jpg' width='170' height='25' align='left'><a href='model.php?product=". $row['model_name']."' class='hotmodel'>".$row['model_name']."</a></td>
+						</tr>";
+				}
+				else {
+				  echo "<tr>
+				          <td background='images/row2.jpg' width='170' height='25' align='left'><a href='model.php?product=".$row['model_name']."' class='hotmodel'>".$row['model_name']."</a></td>
+						</tr>";
+                }
+				$i = $i + 1;
+			  }
+			  ?>
+        <tr>
+          <td height="8"></td>
+        </tr>
+      </table>
+      
+      <table width="170" border="0" cellspacing="0" cellpadding="0" background="images/greyborder.jpg">
+              <tr>
+                <td><img src="images/cat.jpg"/></td>
+              </tr>
+                               <?php
+			  // select the category from database
+			  
+			  $i = 1;
+			  $result = mysql_query("SELECT cat_name FROM category");
+			  if ($_GET['brand'] != "") {
+				  $para = "brand=".$_GET['brand'];
+			  }
+			  elseif ($_GET['product'] != "") {
+				  if ($para != "") { 
+			     	 $para = $para."&product=".$_GET['product'];
+				  }
+				  else {
+					  $para = "product=".$_GET['product'];
+				  }
+			  }
+			  else {
+				  $para = "brand=TOYOTA&product=A/VELLFIRE";
+			  }
+			  while($row = mysql_fetch_array($result)) {
+				if ($i % 2 != 0) {
+					if ($para != "") {
+						echo "<tr>
+				          <td background='images/row1.jpg' width='170' height='25' align='left'><a href='product.php?".$para."' class='category'>".$row['cat_name']."</a></td>
+						</tr>";
+					}
+					else {
+						echo "<tr>
+				          <td background='images/row1.jpg' width='170' height='25' align='left'><a href='product.php' class='category'>".$row['cat_name']."</a></td>
+						</tr>";
+					}				  
+				}
+				else {
+				  if ($para != "") {
+						echo "<tr>
+				          <td background='images/row1.jpg' width='170' height='25' align='left'><a href='product.php?".$para."' class='category'>".$row['cat_name']."</a></td>
+						</tr>";
+					}
+					else {
+						echo "<tr>
+				          <td background='images/row1.jpg' width='170' height='25' align='left'><a href='product.php' class='category'>".$row['cat_name']."</a></td>
+						</tr>";
+					}
+                }
+				$i = $i + 1;
+			  }			  
+			  ?>
+            </table>
+</body>
+</html>

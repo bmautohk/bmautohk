@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table width="168" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/carlist.png" width="168" height="23" /></td>
+  </tr>
+  <?php
+  // select the brand name from database
+  
+  $i = 1;
+  $result = mysql_query("SELECT make_name FROM make");
+
+  while($row = mysql_fetch_array($result)) {
+    if ($i % 2 != 0) {
+      echo "<tr>
+              <td background='images/row1.jpg' width='168' height='25' align='left'><a href='model.php?brand=". $row['make_name']."' class='carlist'>".$row['make_name']."</a></td>
+            </tr>";
+    }
+    else {
+      echo "<tr>
+              <td background='images/row2.jpg' width='168' height='25' align='left'><a href='model.php?brand=".$row['make_name']."' class='carlist'>".$row['make_name']."</a></td>
+            </tr>";
+    }
+    $i = $i + 1;
+  }
+  ?>
+  <tr>
+    <td height="8"></td>
+  </tr>
+</table>
+
+<table width="168" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/cat.png" width="168" height="23"/></td>
+  </tr>
+  <?php
+  // select the category from database
+			  
+  $i = 1;
+  $result = mysql_query("SELECT * FROM product group by product_cat");
+  
+  while($row = mysql_fetch_array($result)) {
+	if ($i % 2 != 0) {
+		echo "<tr>
+			  <td background='images/row1.jpg' width='168' height='25' align='left'><a href='product.php?productcat=".$row['product_cat']."' class='category'>".$row['product_cat']."</a></td>
+			</tr>";	  
+	}
+	else {
+		echo "<tr>
+			  <td background='images/row2.jpg' width='168' height='25' align='left'><a href='product.php?productcat=".$row['product_cat']."' class='category'>".$row['product_cat']."</a></td>
+			</tr>";
+	}
+	$i = $i + 1;
+  }			  
+  ?>
+  <tr>
+  <td height="8"></td>
+</tr>
+</table>
+
+<table width="168" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/hotmodels.png" width="168" height="23" /></td>
+  </tr>
+  <?php
+  // select the brand name from database
+  
+  $i = 1;
+  $result = mysql_query("SELECT product_model FROM product where new = 'H' and sts='A' group by product_model");
+
+  while($row = mysql_fetch_array($result)) {
+    if ($i % 2 != 0) {
+      echo "<tr>
+              <td background='images/row1.jpg' width='168' height='25' align='left'><a href='model.php?product=". $row['product_model']."' class='hotmodel'>".$row['product_model']."</a></td>
+            </tr>";
+    }
+    else {
+      echo "<tr>
+              <td background='images/row2.jpg' width='168' height='25' align='left'><a href='model.php?product=".$row['product_model']."' class='hotmodel'>".$row['product_model']."</a></td>
+            </tr>";
+    }
+    $i = $i + 1;
+  }
+  ?>
+</table>
+
+</body>
+</html>
